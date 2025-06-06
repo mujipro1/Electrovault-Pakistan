@@ -47,7 +47,7 @@ function seedAdminUser() {
     });
 }
 
-// seedAdminUser();
+seedAdminUser();
 
 const userRoutes = require('./routes/userRoutes');
 const categoryRoutes = require('./routes/categoryRoutes');
