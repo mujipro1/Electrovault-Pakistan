@@ -18,7 +18,7 @@
 --
 -- Table structure for table `ads`
 --
-create db if not exists online_marketplace;
+create DATABASE if not exists online_marketplace;
 use online_marketplace;
 DROP TABLE IF EXISTS `ads`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
