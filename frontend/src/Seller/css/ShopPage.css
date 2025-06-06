@@ -1,0 +1,127 @@
+.shop-page {
+    background-color: var(--backgrounds);
+    min-height: 100vh;
+    color: white;
+    width: 100%;
+    position: relative;
+}
+
+.stat-card-shoppage {
+    background-color: var(--pri);
+    height: 100px;
+    width: 100%;
+    overflow: hidden;
+    padding: 10px;
+    cursor: pointer;
+    color: white;
+    position: relative;
+    transition: all .3s ease-in-out;
+}
+
+.option-list-shoppage {
+    background-color: rgb(180, 197, 210);
+    width: 100%;
+    transform: translateY(6px);
+    border-radius: 10px 10px 0 0;
+    padding: 0 5px;
+    padding-top: 10px;
+}
+
+.product-olsp {
+    background-color: var(--backgrounds2);
+    width: 90px;
+    color: var(--text-of-app);
+    text-align: center;
+    z-index: 1;
+    padding: 7px 16px;
+    border-radius: 5px 5px 0 0;
+    cursor: pointer;
+    margin: 0 4px;
+}
+
+.product-olsp-depleted {
+    background-color: rgb(180, 197, 210);
+    color: black;
+    z-index: 1;
+}
+
+.stat-card-n-2 {
+    background-color: #5e7381;
+}
+
+.stat-card-shoppage:hover {
+    transform: scale(1.02);
+}
+
+.circle1-statcard, .circle2-statcard {
+    position: absolute;
+    background-color: rgba(255, 255, 255, 0.21);
+    height: 170px;
+    width: 170px;
+    top: 70px;
+    border-radius: 100%;
+}
+
+.circle2-statcard {
+    right: -40px;
+    top: -40px;
+    height: 100px;
+    width: 100px;
+    background-color: rgba(255, 255, 255, 0.248);
+}
+
+.stats-number {
+    font-size: 55px;
+    color: white!important;
+}
+
+.product-container-shoppage {
+    z-index: 2121;
+    width: 100%;
+    color: white;
+    min-height: 30vh;
+    background-color: var(--backgrounds2);
+}
+
+.prow-shop-page {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px; /* Added gap for cleaner layout */
+    justify-content: flex-start; /* Align cards to left */
+}
+
+.pcard-shop-page {
+    width: calc(20% - 15px); /* Fixed width for 5 cards per row */
+    margin: 8px 0;
+}
+
+/* Responsive behavior */
+@media (max-width: 1024px) {
+    .pcard-shop-page {
+        width: calc(25% - 15px); /* 4 cards per row */
+    }
+}
+
+@media (max-width: 870px) {
+    .pcard-shop-page {
+        width: calc(33.33% - 15px); /* 3 cards per row */
+    }
+    .search-bar-shop-page {
+        width: 80%;
+    }
+}
+
+@media (max-width: 768px) {
+    .pcard-shop-page {
+        width: calc(50% - 15px); /* 2 cards per row */
+    }
+    .search-bar-shop-page {
+        width: 100%;
+    }
+}
+
+@media (max-width: 540px) {
+    .pcard-shop-page {
+        width: 100%; /* 1 card per row */
+    }
+}

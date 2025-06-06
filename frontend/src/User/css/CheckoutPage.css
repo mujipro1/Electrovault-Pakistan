@@ -1,0 +1,124 @@
+.stripe-page{
+  width: 100%;
+  height: 100vh;
+  background-color: var(--backgrounds);
+  display: flex;
+  justify-content: center;
+  align-items: start;
+}
+
+.payment-form{
+  height: 80vh;
+  background-color: var(--backgrounds2);
+  width: 70vw;
+  border-radius: 17px;
+  margin-top: 30px;
+}
+
+.overflow-hidden{
+  overflow: hidden;
+}
+
+.payment-img-cont{
+  object-fit: contain;
+  overflow: hidden;
+  position: relative;
+  height: 100%;
+  border-radius: 17px 0 0 17px;
+}
+
+.price{
+  position: absolute;
+  z-index: 100;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  font-size: 4rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+}
+.payment-img{
+  width: auto;
+  height: 100%;
+  object-fit: cover;
+}
+
+.border-top{
+  border-top: 1px solid grey;
+}
+.h-21{
+  height: 100%;
+}
+
+.h-21row{
+  height: 100%;
+}
+
+
+.input-field{
+  display: flex;
+  justify-content: center;
+  margin: 8px 0;
+}
+.back-price{
+  position: relative;
+  bottom: 35px;
+  left: 20px;
+  cursor: pointer;
+  z-index: 1111;
+  color: rgb(217, 225, 226);
+}
+
+.enter-price{
+  position: absolute;
+  top: 15px;
+  left: 20px;
+  cursor: pointer;
+  z-index: 1111;
+  color: rgb(217, 225, 226);
+}
+.custom-acc-width{
+  width: 50%;
+}
+
+@media(max-width: 1000px){
+  .payment-form{
+    width: 88vw;
+  }
+}
+  @media(max-width: 768px){
+  .payment-img-cont{
+    height: 20vh;
+    width: 100%;
+    border-radius: 17px 17px 0 0 ;
+  }
+  .custom-acc-width{
+    width: 100%;
+  }
+  .payment-img{
+    width: 100%;
+    height: auto;
+  }
+  .h-21{
+    height: 20%;
+  }
+  .h-21row{
+    height: fit-content;
+  }
+  .payment-form{
+    width: 90%;
+    height: auto;
+    margin-top:0;
+  }
+
+  .stripe-page{
+    height: fit-content;
+    padding: 30px 0;
+  }
+  .set-height-sp{
+    height: fit-content;
+  }
+}

@@ -1,0 +1,42 @@
+.seller-home{
+    min-height:100vh;
+    color: white;
+    width: 100%;
+    position: relative;
+    background-color: var(--backgrounds);
+}
+
+.shop-card-seller{
+    background-color: var(--pri);
+    height: 200px;
+    padding: 16px 20px;
+    color: white;
+    position: relative;
+    transition: all .3s ease-in-out;
+}
+
+.shop-card-seller:hover{
+    background-color: #205875;
+    transform: scale(1.03);
+}
+
+.circle1-shop-card, .circle2-shop-card{
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    bottom: 20px;
+    background-color: rgb(255, 251, 11);
+    border-radius: 100%;
+}
+.circle2-shop-card{
+    left:35px;
+    background-color: rgba(255, 0, 0, 0.775);
+}
+.custom-width-shopcard{
+    width: 80%;
+}
+@media (max-width: 768px) {
+    .custom-width-shopcard{
+        width: 100%;
+    }
+}

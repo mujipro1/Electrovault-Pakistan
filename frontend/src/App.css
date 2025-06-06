@@ -1,0 +1,85 @@
+@import "~slick-carousel/slick/slick.css";
+@import "~slick-carousel/slick/slick-theme.css";
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+*{
+    font-family: 'Roboto Condensed', sans-serif;
+}
+
+:root{
+    --pri: #00b8ff;
+    --backgrounds: #fbfdff;
+    --backgrounds2: #eeeff1;
+
+    --secondary: #e3e5ea; /*sidebar */
+    --secondary2: #dadee1;
+    --text-of-app: black;
+}
+body{
+    background-color: var(--backgrounds);
+    color: var(--text-of-app);
+}
+h1,h2,h3,h4,h5,h6{
+    color: var(--text-of-app)!important;
+}
+.content-container{
+    padding-top: 68px;
+}
+.user-container{
+    padding-top: 104px;
+}
+.sec-text{
+    color:rgb(100, 128, 150);
+}
+.text-of-app, .text-of-app{
+    color: var(--text-of-app);
+}
+
+.text-white{
+    color:white;
+}
+.text-secondary{
+    color:rgb(44, 52, 55)!important;
+}
+.btn-success{
+    background-color: var(--pri)!important;
+    border-color: var(--pri)!important;
+}
+.btn-success:hover{
+    background-color: #0e9ddb!important;
+    border-color: #0e9ddb!important;
+}
+.br-lg{
+    border-radius: 10px;
+}
+.br-sm{
+    border-radius: 7px;
+}
+
+.font-roboto{
+    font-family: 'Roboto', sans-serif;
+}
+
+.cursor-pointer{
+    cursor: pointer;
+}
+
+.pad-for-side{
+    padding-left: 40px;
+}
+
+.back-btn{
+    position: absolute;
+    top: 25px;
+    left: 40px;
+}
+
+@media (max-width: 992px){
+    .back-btn{
+        position: relative;
+        top: 0;
+        left: 0;
+    }
+    
+}

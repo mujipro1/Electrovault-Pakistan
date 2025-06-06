@@ -1,0 +1,75 @@
+.sidebar{
+    height: 100vh;
+    background-color: var(--secondary);
+    width: 40px;
+    position: fixed;
+    z-index: 213123;
+}
+
+.bar{
+    height: 3px;
+    width: 20px;
+    margin:2px;
+    border-radius: 20px;
+    background-color: rgba(0, 0, 0, 0.83);
+    animation: fade-out .3s ease-in-out;
+}
+
+.category-sidebar{
+    background-color: var(--secondary);
+    width: 90%;
+    margin: 1px auto;
+    border-radius: 5px;
+    padding: 5px 20px;
+    cursor: pointer;
+}
+
+.category-sidebar:hover{
+    background-color: var(--secondary2);
+}
+
+@keyframes fade-out {
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+
+.expanded{
+    position: fixed;
+    width: 200px;
+    z-index: 213123;
+    background-color: var(--secondary);
+    border-radius: 0 8px 8px 0;
+    height: 100vh;
+    animation: come-out .3s ease-in-out;
+}
+
+@keyframes come-out {
+    0%{
+        transform: translateX(-150px);
+    }
+    100%{
+        transform: translateX(0px);
+    }
+    
+}
+
+.cross1, .cross2{
+    height: 3px;
+    width: 20px;
+    border-radius: 20px;
+    background-color: rgba(0, 0, 0, 0.83);
+    margin:10px 5px;
+    animation: fade-out .3s ease-in-out;
+}
+
+.cross2{
+    transform: translateY(-23px)rotate(-45deg);
+}
+
+.cross1{
+    transform: rotate(45deg);
+}

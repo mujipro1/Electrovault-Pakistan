@@ -1,0 +1,13 @@
+.seller-data{
+    min-height: 100vh;
+    background-color: var(--backgrounds);
+    padding: 40px 50px;
+    position: relative;
+}
+
+
+@media screen and (max-width: 768px){
+    .seller-data{
+        padding: 20px;
+    }
+}

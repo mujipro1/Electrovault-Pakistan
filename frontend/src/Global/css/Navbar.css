@@ -1,0 +1,185 @@
+/* Navigation Row */
+.nav-row {
+    padding: 0 26px!important;
+    position: fixed;
+    width: 100vw;
+    z-index: 1111;
+    transition: background-color .3s ease-in-out;
+    background-color: var(--backgrounds);
+    color: rgb(0, 0, 0);
+    box-shadow: 0px 2px 5px rgba(187, 189, 196, 0.377);
+  }
+  
+  .cart-count-badge {
+    position: absolute;
+    top: -5px;
+    right: -10px;
+    background-color: var(--pri);
+    color: rgb(0, 0, 0);
+    border-radius: 10px;
+    padding: 1px 6px;
+    width: 18px;
+    height: 18px;
+    font-size: 12px;
+}
+
+.cart-svg{
+  height: 25px;
+  width: 25px;
+}
+  /* Nav Items */
+  .nav-list {
+    text-decoration: none;
+    display: flex;
+    list-style: none;
+    padding: 0;
+  }
+  
+  .nav-logo{
+    animation: logo .8s ease-in-out;
+  }
+  
+  .editable-price-input {
+    width: 100%;
+    text-align: center;
+    font-size: 3.5rem;
+    color: rgb(0, 0, 0);
+    font-weight: bold;
+    background: transparent;
+    border: none;
+    outline: none;
+    appearance: textfield;
+  }
+  .editable-price-input::-webkit-outer-spin-button,
+  .editable-price-input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+  }
+  
+  /* For Firefox */
+  .editable-price-input[type="number"] {
+    -moz-appearance: textfield;
+  }
+  
+  
+  @keyframes logo {
+      0%{
+        opacity: 0;
+      }
+      100%{
+        opacity: 1;
+      }
+  }
+  
+  .nav-item {
+    margin: 10px 2vw;
+    cursor: pointer;
+    color: rgb(0, 0, 0);
+
+  }
+  
+  .atTop .nav-item {
+    color: rgb(0, 0, 0);
+  }
+  
+  /* Sign In Button */
+  .prb-3 {
+    background-color: transparent;
+    color: var(--sec);
+    border-radius: 100px;
+    border: 1px solid var(--sec);
+    height: fit-content;
+    padding: 10px 20px;
+    transition: all .3s ease-in-out;
+    cursor: pointer;
+  }
+  
+  .atTop .prb-3 {
+    color: rgb(0, 0, 0);
+    border: 1px solid black;
+  }
+  
+  .atTop .prb-3:hover {
+    color: var(--sec);
+    background-color: black;
+  }
+  
+  .prb-3:hover {
+    color: black;
+    background-color: var(--sec);
+  }
+  
+  /* Navbar Logo */
+  .nav-logo {
+    height: auto;
+    width: 63px;
+    cursor: pointer;
+  }
+  
+  /* Hamburger Menu */
+  .hamburger {
+    display: flex;
+    flex-direction: column;
+    cursor: pointer;
+    z-index: 2000;
+  }
+  
+  .line {
+    width: 25px;
+    background-color: black;
+    border-radius: 2px;
+    height: 4px;
+    margin: 2px 0;
+    transition: all 0.3s ease;
+  }
+  
+  .black {
+    background-color: black;
+    color: white;
+  }
+  
+  .black {
+    background-color: black;
+  }
+  
+  .baropen {
+    transform: rotate(45deg);
+  }
+  
+  /* Mobile Navigation Dropdown */
+  .mobile-nav {
+    position: absolute;
+    top: 60px;
+    right: 0;
+    background-color: rgba(17, 18, 20, 0.9); /* Always black with slight opacity */
+    width: 200px;
+    border-radius: 5px;
+    text-align: center;
+    display: none;
+    color: white!important;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  .nav-h-mobile{
+    height: 62px;
+  }
+  .mobile-nav.open {
+    display: block;
+  }
+  
+  .mobile-nav ul {
+    list-style: none;
+    padding: 10px 0;
+    margin: 0;
+  }
+  
+  .mobile-nav .nav-item {
+    padding: 10px;
+    color: rgb(255, 255, 255); /* Always black */
+    cursor: pointer;
+    transition: 0.3s;
+  }
+  
+  .mobile-nav .nav-item:hover {
+    background-color: rgba(0, 0, 0, 0.1);
+  }
+  

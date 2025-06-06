@@ -1,0 +1,5 @@
+.invoice-page{
+    background-color: var(--backgrounds);
+    min-height: 100vh;
+    padding: 20px;
+}

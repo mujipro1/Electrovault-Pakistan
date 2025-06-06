@@ -1,0 +1,11 @@
+.order-details-page{
+    position:relative;
+    background-color: var(--backgrounds);
+    min-height: 100vh;
+    width: 100%;
+}
+.order-info-container{
+    color: white;
+    background-color: var(--backgrounds2);
+    min-height: 30vh;
+}

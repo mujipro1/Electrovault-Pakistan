@@ -1,0 +1,44 @@
+.scrolling-container {
+    display: flex;
+    
+    flex-wrap: nowrap;
+    overflow: hidden;
+    width: 100%;
+    height: 17vh;
+    white-space: nowrap;
+    background:linear-gradient(135deg, var(--backgrounds),var(--backgrounds2));
+    /* border-bottom: 2px solid #c9cbce; Optional border */
+  }
+  
+  .word-block {
+    flex: 0 0 auto;
+    width: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2.5rem; /* Adjust the size of the text */
+    color: #141415db;
+    background-color: transparent; /* Optional block background */
+    font-weight: 400;
+    letter-spacing: -0.1rem;
+  }
+  .dot{
+    font-size: 2rem;
+    width: 4rem;
+    display: flex;
+    color: var(--main);
+    justify-content: center;
+  }
+
+  @media (max-width: 768px){
+    .word-block{
+      font-size: 1.8rem;
+    }
+    .scrolling-container{
+      height: 10vh;
+    }
+    .dot{
+      width: 3rem;
+    }
+  }
+  
